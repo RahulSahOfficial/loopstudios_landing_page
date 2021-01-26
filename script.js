@@ -1,0 +1,20 @@
+$(document).ready(function(){
+	$(".eachcard").mouseenter(function()
+	{
+		$(this).find("img").addClass("cardimghover")
+		$(this).find("h4").addClass("cardtexthover")
+	})
+	$(".eachcard").mouseleave(function()
+	{
+		$(this).find("img").removeClass("cardimghover")
+		$(this).find("h4").removeClass("cardtexthover")
+	})
+	$("#menu").click(function()
+	{
+		$("#mobilemenu").css("display","flex")
+	})
+	$("#close").click(function()
+	{
+		$("#mobilemenu").css("display","none")
+	})
+})

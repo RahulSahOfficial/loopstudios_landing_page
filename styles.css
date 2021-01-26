@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body,input,button,select,textarea{
+	font:400 1rem Roboto;
+	color: #222222;
+}
+a{
+	text-decoration: none;
+}
+a:link,a:active,a:visited{
+	color:#6A26CD;
+}
+a:hover{
+	color:#431488;
+}
+body
+{
+	width: 100%;
+	min-height: 100vh;
+}
+
+/*HeroArea*/
+.heroarea
+{
+	background-image: url("images/desktop/image-hero.jpg");
+	padding: 4rem 12rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav
+{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .links
+{
+	font-family: 'Alata', sans-serif;
+}
+nav .links a
+{
+	color: white;
+	margin: 0 0.7rem;
+    font-size: 0.95rem;
+    padding-bottom: 0.3rem;
+    transition: 0.3s;
+}
+nav .links a:hover
+{
+	border-bottom: 2px solid white;
+}
+#menu,#mobilemenu
+{
+	display:  none;
+}
+.heroarea h1
+{
+	font-family: 'Josefin Sans', sans-serif;
+    font-size: 4.5rem;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 40rem;
+    padding: 2rem 3rem;
+    border: 2px solid white;
+    margin: 8rem 0;
+}
+.description
+{
+	display: flex;
+    padding: 10rem 8rem 10rem 10rem;
+    align-items: flex-end;
+
+}
+.description .desctext{
+	background: white;
+    padding: 4rem 0 0.5rem 4rem;
+    transform: translateX(-30%);
+}
+.headings{
+	font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.description .desctext p{
+	color: #969a96;
+    font-size: 0.9rem;
+    font-family: 'Alata', sans-serif;
+    line-height: 1.7;
+    color: #b5b5b5;
+    font-weight: 600;
+}
+.our_creations
+{
+	margin: 10rem;
+	position: relative;
+}
+.our_creations button{
+	
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+    border: 2px solid black;
+    color: black;
+    background: white;
+    padding: 0.7rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.2s;
+}
+.our_creations button:hover{
+	background: black;
+	color: white;
+}
+.showcase
+{
+	margin: 4rem 0;
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.eachcard
+{
+	text-align: left;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	margin: 1rem 0;
+	transition: 0.4s;
+}
+.eachcard h4
+{
+	font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 300;
+    bottom: 0;
+    left: 0;
+    margin: 2rem;
+    color: white;
+    position: absolute;
+}
+.eachcard img{
+	filter: brightness(0.7);
+}
+.cardimghover{
+	filter: opacity(0.3)!important;
+}
+.cardtexthover
+{
+	color: black!important;
+}
+.footer
+{
+	background: #000000;
+	padding: 3rem 10rem;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Alata', sans-serif;
+}
+.footer ul
+{
+	list-style: none;
+	display: flex;
+}
+.footer .links
+{
+	margin-top: 1rem;
+}
+.links a
+{
+	color: white;
+    margin-right: 1rem;
+}
+.rightcol .copyright
+{
+	color: #717171;
+	margin-top: 1rem;
+}
+.sociallink ul
+{
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.sociallink ul li{
+	margin-left: 1rem;
+}
+.sociallink ul li a{
+	padding-bottom: 0.3rem;
+	transition: 0.2s;
+	    opacity: 0.9;
+}
+.sociallink ul li a:hover
+{
+    border-bottom: 2px solid white;
+    opacity: 1;
+}
+.attribution
+{
+	background: black;
+    padding: 0 10rem;
+    text-align: right;
+    line-height: 1.5;
+ 	font-size: 0.8rem;
+    color: #d8d8d8;
+}
+.attribution a{
+	color: #d8d8d8;
+}
+@media only screen and (max-width: 1200px){
+	.heroarea
+	{
+		padding: 4rem 6rem;
+	}
+	.description
+	{
+		padding: 5rem 8rem 5rem 5rem;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.description .desctext 
+	{
+    	padding: 4rem 0 0.5rem 0rem;
+    	transform: none;
+    }
+	.our_creations
+	{
+		margin: 5rem;
+	}
+	.footer
+	{
+		padding: 3rem 5rem;
+	}
+	.attribution
+	{
+		padding: 0 5rem;
+	}
+}
+@media only screen and (max-width: 900px){
+	#menu
+	{
+		display: block;
+	}
+	.heroarea
+	{
+		padding: 3rem 1rem;
+	}
+	.heroarea h1
+	{
+		width: 100%;
+    	padding: 1rem;
+    	font-size: 2.8rem;
+	}
+	nav .links
+	{
+		display: none;
+	}
+	.description
+	{
+		padding: 2rem;
+	}
+	.description img{
+		width: 100%;
+	}
+	.desctext
+	{
+		text-align: center;
+	}
+	.headings
+	{
+		font-size: 2.2rem;
+	}
+	.our_creations
+	{
+		margin:2rem;
+		text-align: center;
+	}
+	.eachcard img
+	{
+		width: 100%;
+	}
+	.eachcard h4
+	{
+		font-size: 2rem;
+    	margin: 0 4rem 1rem 1rem;
+	}
+	.showcase
+	{
+		margin:1rem 0;
+	}
+	.our_creations button
+	{
+		position: relative;
+	}
+	.footer
+	{
+		text-align: center;
+    	flex-direction: column;
+    	padding: 2rem;
+	}
+	.footer .links ul
+	{
+		flex-direction: column;
+	}
+	.leftcol ul li{
+		margin-bottom: 0.7rem;
+	}
+	.footer .rightcol
+	{
+		margin-top: 2rem;
+	}
+	.sociallink ul
+	{
+		justify-content: center;
+	}
+	.attribution
+	{
+		padding: 0 2rem 0.5rem;
+	}
+	#mobilemenu
+	{
+		position: fixed;
+    	top: 0;
+    	left: 0;
+    	z-index: 99;
+    	height: 100vh;
+    	width: 100%;
+    	background: black;
+    	color: white;
+    	display: none;
+    	flex-direction: column;
+    	justify-content: center;
+    	padding: 2rem;
+    	transition: 0.5s;
+	}
+	#logo
+	{
+		position: absolute;
+    	top: 2rem;
+    	left: 2rem;
+	}
+	#close
+	{
+		position: absolute;
+    	top: 2rem;
+    	right: 2rem;
+	}.mobilelinks
+	{
+		display: flex;
+    	flex-direction: column;
+	}
+	.mobilelinks a
+	{
+		font-family: 'Josefin Sans', sans-serif;
+    	color: white;
+    	margin: 1rem 0;
+    	font-size: 1.7rem;
+    	font-weight: 300;
+    	text-transform: uppercase;
+	}
+}
